@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . -t unknownxyz/cut
+      run: docker build . -t unknownxyz/ct
     - name: login
-      run: docker login -u unknownxyz -p garvatibot && docker push unknownxyz/cut
+      run: docker login -u unknownxyz -p garvatibot && docker push unknownxyz/ct
